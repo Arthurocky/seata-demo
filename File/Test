@@ -1,0 +1,18 @@
+update seata_demo_storage.tb_storage
+set count =10
+where id = 1;
+
+truncate seata_demo_order.tb_order;
+
+update seata_demo_account.tb_account
+set money=1000
+where id = 1;
+
+select *
+from seata_demo_storage.tb_storage;
+
+select *
+from seata_demo_order.tb_order;
+
+select *
+from seata_demo_account.tb_account;
