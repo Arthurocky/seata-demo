@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "ad384f30-d9dd-41a9-afaf-c1662729d78e",
+		"name": "seata案例",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "下单",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userId",
+							"value": "user202103032042012",
+							"description": "用户id",
+							"type": "text"
+						},
+						{
+							"key": "commodityCode",
+							"value": "100202003032041",
+							"description": "商品编号",
+							"type": "text"
+						},
+						{
+							"key": "count",
+							"value": "10",
+							"description": "商品数量",
+							"type": "text"
+						},
+						{
+							"key": "money",
+							"value": "200",
+							"description": "总金额",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8082/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
