@@ -24,7 +24,7 @@ logging:
   pattern:
     dateformat: HH:mm:ss
 seata:
-  data-source-proxy-mode: XA  #XA模式
+  data-source-proxy-mode: AT  #AT模式
   registry: # TC服务注册中心的配置，微服务根据这些信息去注册中心获取tc服务地址
     type: nacos # 注册中心类型 nacos
     nacos:
